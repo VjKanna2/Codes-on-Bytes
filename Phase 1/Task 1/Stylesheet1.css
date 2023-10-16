@@ -1,0 +1,75 @@
+body{
+    background-image: url('Images/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.title,
+.form{
+    text-align: center;
+}
+.title{
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+    color: white;
+    animation-name: titleAnim;
+    animation-duration: 2s;
+}
+.title:hover{
+    letter-spacing: 2px;
+    transition: 1s;
+}
+@keyframes titleAnim {
+    0%{margin-left: -1000px;}
+}
+.form{
+    background: rgba(0,0,0,.5);
+    height: 60%;
+    width: 25%;
+    padding: 25px 0px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1.5px solid white;
+    margin: 10% 37% 10% 37%;
+    float: left;
+    animation-name: formAnim;
+    animation-duration: 2s;
+}
+@keyframes formAnim {
+    0%{margin-top: -1000px;}
+}
+.emailField{
+    margin: 10px 20px 10px 20px;
+    width: 60%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 18px;
+    letter-spacing: 2px;
+    background: white;
+}
+.emailField:hover{
+    transition: 1s;
+    letter-spacing: 3.5px;
+}
+.linkBtn{
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid green;
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: white;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.linkBtn:hover{
+    letter-spacing: 2px;
+    color: white;
+    background-color: green;
+    border: 2px solid white ;
+    transition: 1.2s;
+}

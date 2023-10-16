@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes on Bytes</title>
+    <link rel="stylesheet" href="Stylesheet2.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="Script2.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="Images/Logo.jpg" alt="Logo" class="logoImg">
+    </div>
+    <div class="form">
+        <form action="">
+            <input type="text" class="fname" placeholder="FIRST NAME" required>
+            <input type="text" class="lname" placeholder="LAST NAME">
+            <br>
+            <input type="email" class="emailField" placeholder="EMAL ID" required>
+            <br>
+            <label for="dob" class="dob">D.O.B</label>
+            <input type="date" class="date" id="Dob" onkeyup="myFunction5()" required>
+            <p id="error message" style="color: red;"></p>
+            <br>
+            <input type="password" class="pword" id="pword" placeholder="PASSWORD" onkeyup="myFunction3()" required>
+            <i class="far fa-eye" id="eye" onclick="myFunction()"></i>
+            <p id="instructionMessage" style="color: red;"></p>
+            <input type="password" class="pword" id="pword2" placeholder="CONFIRM PASSWORD" onkeyup="myFunction4()" required>
+            <i class="far fa-eye" id="eye" onclick="myFunction2()"></i>
+            <p id="instructionMessage2"></p>
+            <br>
+            <button class="SignUpBtn" id="signupBtn">SignUp</button>
+        </form>
+    </div>
+</body>
+</html>

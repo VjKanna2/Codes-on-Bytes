@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="Stylesheet1.css" type="text/css">
+</head>
+<body>
+    <div class="title">
+        <h1>Enter Your Mail ID</h1>
+    </div>
+    <div class="form" id="form">
+        <form action="">
+            <input type="email" id="emailField" class="emailField" placeholder="EMAIL ID" onclick="myFunction1()" autocomplete="off" required>
+            <p id="instructionMessage" style="color: rgb(38, 0, 255);"></p>
+            <br>
+            <button type="submit" class="linkBtn" id="linkBtn" onclick="myFunction2()">Get Link</button>
+        </form>
+    </div>
+    <script>
+        function myFunction1(){
+            var x = document.getElementById("emailField").value;
+            if(x == ""){
+                document.getElementById("instructionMessage").innerHTML = "Fill Your Mail ID!"
+                document.getElementById("linkBtn").disabled = true;
+                document.getElementById("linkBtn").style.opacity = (0.4);
+            }
+            else{
+                document.getElementById("instructionMessage").innerHTML = ""
+                document.getElementById("linkBtn").disabled = false;
+                document.getElementById("linkBtn").style.opacity = (1);
+            }
+        }
+        function myFunction2(){
+            alert("A Reset Link Has been Sent!");
+        }
+    </script>
+</body>
+</html>

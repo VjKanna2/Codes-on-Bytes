@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background: url('Images/Background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* LOGO */
+.logo{
+    text-align: center;
+    margin-top: 20px;
+    animation-name: logoAnim;
+    animation-duration: 2s;
+}
+@keyframes logoAnim {
+    0%{
+        margin-right: -10000px;
+    }
+}
+.logoImg{
+    border-radius: 70px;
+    width: 140px;
+    height: 140px;
+}
+.logoImg:hover{
+    rotate: 360deg;
+    transition: 1.5s;
+}
+
+/* FORM */
+.form{
+    height: 60%;
+    width: 34%;
+    padding: 25px 0px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1.5px solid white;
+    margin: 4% 33% 0% 33%;
+    background-color: rgba(0,0,0,.5);
+    animation-name: formAnim;
+    animation-duration: 2s;
+}
+@keyframes formAnim {
+    0%{
+        margin-left: -10000px;
+    }
+}
+.fname{
+    margin-right: 10px;
+}
+.fname,
+.lname{
+    width: 25%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 18px;
+    letter-spacing: 2px;
+    background: white;
+    margin-bottom: 10px;
+}
+.emailField{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.emailField,
+.pword{
+    width: 60%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 18px;
+    letter-spacing: 2px;
+    background: white;
+}
+.pword{
+    margin-left: -15px;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+#eye{
+    margin-left: -40px;
+    cursor: pointer;
+}
+.dob{
+    color: white;
+}
+.date{
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.fname:hover,
+.lname:hover,
+.emailField:hover,
+.pword:hover{
+    transition: 1s;
+    letter-spacing: 3.5px;
+}
+
+/* SIGN UP BUTTON */
+.SignUpBtn{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid green;
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: white;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.SignUpBtn:hover{
+    letter-spacing: 2px;
+    color: white;
+    background-color: green;
+    border: 2px solid white ;
+    transition: 1.2s;
+}
