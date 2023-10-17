@@ -1,0 +1,504 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: static;
+    background-color: black;
+}
+main,
+footer{
+    overflow: hidden;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    overflow: hidden;
+    margin: auto;
+    animation-name: headerAnim;
+    animation-duration: 1s;
+    /* border-bottom: 1px solid white; */
+}
+
+/* header logo */
+.logo{
+    margin-left: 20px;
+}
+.logoImg{
+    height: 80px;
+    width: 230px;
+    cursor: pointer;
+}
+.navLogo{
+    color: white;
+}
+
+/* search */
+.searchBar{
+    margin-left: 40px;
+}
+.search{
+    width: 600px;
+    height: 50px;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 17px;
+    border: 0.1px solid black;
+}
+.searchButton{
+    margin-left: -55px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+#searchbtn{
+    font-size: 25px;
+}
+
+/* header list */
+.headerList{
+    display: flex;
+    margin-left: 90px;
+}
+.headerList li{
+    list-style: none;
+    padding: 20px;
+    font-size: 23px;
+}
+.headerList li:hover{
+    background-color: #ececec;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+.headerList li a{
+    text-decoration: none;
+    color: white;
+}
+.headerList li a:hover{
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.7s;
+}
+
+/* cart */
+.cart{
+    margin-left: 130px;
+    font-size:35px;
+}
+#cartLogo{
+    color: white;
+    padding: 10px;
+}
+#cartLogo:hover{
+    color: black;
+    padding: 10px;
+    transition: 0.7s;
+    padding-right: 13px;
+}
+.cart:hover{
+    background-color: #ececec;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+
+/* main content */
+/* nav logos */
+.logos{
+    margin: 1% 23%;
+    width: 100%;
+    height: 7%;
+    align-items: center;
+    overflow: hidden;
+}
+.navLogo{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+/*  image slider  */
+*{
+    box-sizing:border-box
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 10px;
+}
+.mySlides {
+    display: none;
+}
+.bannerImg1,
+.bannerImg2,
+.bannerImg3{
+    width: 100%;
+    height: 450px;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    border: 2px solid black;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* bank image */
+.bank{
+    margin-left: 25%;
+    width: 50%;
+    height: 5%;
+}
+
+/* head text */
+.headtxt{
+    color: white;
+    text-align: center;
+}
+
+/*  new launches  */
+.cards{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin: 15px 5px;
+    background-color: black;
+}
+.section1,
+.section2,
+.section3{
+    width: 28%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    overflow: auto;
+    text-align: center;
+}
+.secImg1,
+.secImg2,
+.secImg3{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    height: 70%;
+}
+.secBtn1,
+.secBtn2,
+.secBtn3,
+.mainBtn{
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.secBtn1:hover,
+.secBtn2:hover,
+.secBtn3:hover,
+.mainBtn:hover{
+    letter-spacing: 1px;
+    background-color: white;
+    color: black;
+    transition: 1.2s;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+/* lowest price */
+.mainCard{
+    width: 98%;
+    margin: 10px;
+    border-radius: 10px;
+    height: 500px;
+    border: 2px solid white;
+    padding: 20px;
+}
+.mainImg{
+    width: 32%;
+    float: left;
+    height: 100%;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+.textofmainCard{
+    color: white;
+    text-align: center;
+}
+#textofMainCard{
+    margin-top: 45px;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+#textofMainCard2{
+    margin-top: 7%;
+    font-size: 37px;
+}
+#textofMainCard3{
+    font-size: 18px;
+    margin-top: -1%;
+}
+.mainBtn{
+    margin-top: 10px;
+    margin-left: 29%;
+    font-size: 20px;
+}
+
+/* more items */
+.moreItemsText1,
+.moreItemsText2,
+.moreItemsText3{
+    color: white;
+    margin-left: 10px;
+}
+.moreItems1,
+.moreItems2,
+.moreItems3{
+    width: 98%;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.miImg1,
+.miImg2,
+.miImg3,
+.miImg4,
+.lImg1,
+.lImg2,
+.lImg3,
+.lImg3,
+.lImg4,
+.TVImg1,
+.TVImg2,
+.TVImg3,
+.TVImg4{
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.twsText1,
+.twsText2,
+.twsText3,
+.twsText4,
+.LapText1,
+.LapText2,
+.LapText3,
+.LapText4,
+.TVText1,
+.TVText2,
+.TVText3,
+.TVText4{
+    text-align: center;
+    cursor: pointer;
+}
+.subText{
+    color: white;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+/* report box */
+/* header */
+.form-header{
+	background-color:grey;
+	padding:3px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	margin-bottom:20px;
+}
+#mail-icon{
+	margin: 14px 10px 10px 10px;
+	width: 30px;
+	float: left;
+    border-radius: 20px;
+}
+#label-of-report{
+	color:black;
+	padding-bottom:8px;
+}
+/* body */
+.form-box-container{
+	background-color:black;
+	width:300px;
+	border-radius:20px;
+	position:fixed;
+	bottom:-290px;
+	right:0;
+	transition:1s;
+}
+.form-box-container:hover{
+	bottom:0;
+}
+.form-item{
+	margin-left:15px;
+	color:white;
+	padding-left:8px;
+}
+#fname,
+#lname{
+    padding: 7px;
+}
+#fname,
+#lname,
+#subject{
+    border-radius: 10px;
+}
+#fname:hover{
+	background-color:lightgoldenrodyellow;
+	color:black;
+}
+#lname:hover{
+	background-color:lightgoldenrodyellow;
+	color:black;
+}
+#subject{
+	height:80px;
+	width:250px;
+    margin-left: 23px;
+
+}
+#subject:hover{
+	background-color:lightgoldenrodyellow;
+	color:black;
+}
+#submit{
+	background-color:green;
+	border:none;
+	color:white;
+	border-radius:7px;
+	margin:10px 15px;
+	padding:7px 12px;
+	text-align:center;
+	letter-spacing:1px;
+	cursor:pointer;
+	display:inline-block;
+}
+#submit:hover{
+	background-color:orange;
+	opacity:0.7;
+}
+
+/* back to top */
+.topBtn{
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    letter-spacing: 0.4px;
+}
+.topBtn:hover{
+    letter-spacing: 1px;
+    transition: 1s;
+    cursor: pointer;
+    background: lightgray;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(34, 45, 62, 0.826);
+    color: white;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* footer contents */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footerItems ul li,
+.footerItems2 ul li,
+.footerItems3 ul li,
+.footerItems4 ul li{
+    list-style: none;
+    padding: 5px;
+}
+.footerItems ul li:hover,
+.footerItems2 ul li:hover,
+.footerItems3 ul li:hover,
+.footerItems4 ul li:hover{
+    color: red;
+    cursor: pointer;
+}
+.footerHead{
+    color: grey;
+}

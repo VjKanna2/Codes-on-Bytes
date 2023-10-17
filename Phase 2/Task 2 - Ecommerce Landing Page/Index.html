@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="Stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- script file -->
+    <script src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Index.html"><img src="Images/Logo.png" alt="Logo" class="logoImg" id="logoImg"></a>
+        </div>
+        <div class="searchBar">
+            <input type="search" class="search" id="search" placeholder="SEARCH">
+            <button class="searchButton"><i class="fa fa-search" id="searchbtn"></i></button>
+        </div>
+        <nav>
+            <ul class="headerList" id="headerList">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Orders</a></li>
+            </ul>
+        </nav>
+        <a href="" class="cart"><i class="fa fa-shopping-cart" id="cartLogo"></i></a>
+    </header>
+
+    <br>
+    <hr width="1400">
+
+    <main>
+        <!-- nav logos -->
+        <div class="logos">
+            <img src="Images/Mobile.jpeg" alt="Mobiles" class="navLogo">
+            <img src="Images/Laptop.jpg" alt="Laptops" class="navLogo">
+            <img src="Images/Tv.jpg" alt="Television" class="navLogo">
+            <img src="Images/Airpods.jpg" alt="TWS" class="navLogo">
+            <img src="Images/More.png" alt="More" class="navLogo">
+        </div>
+
+        <!-- image slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Images/Banner1.jpg" class="bannerImg1">
+              <div class="text">Cyber Monday</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Images/Banner2.jpg" class="bannerImg2">
+              <div class="text">Black Friday</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Images/Banner3.jpg" class="bannerImg3">
+              <div class="text">Limited Discount</div>
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+          
+        <br><br>
+
+        <!-- bank offer image -->
+        <img src="Images/Bank.png" alt="" class="bank">
+
+        <!-- new launches -->
+        <h1 class="headtxt">NEW LAUNCHES</h1>
+        <p class="headtxt" style="font-size: 20px;">on SAMSUNG</p>
+        <hr width="800">
+        <br>
+        <div class="cards">
+            <section class="section1">
+                <img src="Images/Mobile1.jpeg" alt="" class="secImg1">
+                <h3 class="secPara1"> SAMSUNG S23 Ultra</h3>
+                <input type="submit" value="BUY NOW" class="secBtn1">
+            </section>
+            <section class="section2">
+                <img src="Images/Mobile2.jpeg" alt="" class="secImg2">
+                <H3 class="secPara2">SAMSUNG S23 FE 5G</H3>
+                <input type="submit" value="BUY NOW" class="secBtn2">
+            </section>
+            <section class="section3">
+                <img src="Images/Mobile3.jpeg" alt="" class="secImg3">
+                <h3 class="secPara3">SAMSUNG S21 FE (Snapdragon Variant) </h3>
+                <input type="submit" value="BUY NOW" class="secBtn3">
+            </section>
+        </div>
+        <br><br>
+
+        <!-- lowest price section -->
+        <h1 class="headtxt">LOWEST PRICE EVER!</h1>
+        <hr width="800">
+        <br>
+        <div class="mainCard">
+            <img src="Images/Mobile4.jpeg" alt="" class="mainImg">
+            <h1 class="textofmainCard" id="textofMainCard">iPhone 13</h1>
+            <h2 class="textofmainCard" id="textofMainCard2"><s>Rs.69,999</s> Rs.49,999/-</h2>
+            <p class="textofmainCard" id="textofMainCard3">(Only on this Sale)</p>
+            <input type="submit" value="BUY NOW" class="mainBtn">
+        </div>
+        <br>
+
+        <!-- more items section -->
+        <h2 class="moreItemsText1">More on TWS</h2>
+        <p class="subText">By Brands</p>
+        <div class="moreItems1">
+            <section class="sec1">
+                <img src="Images/Tws1.jpeg" alt="" class="miImg1">
+                <h3 class="twsText1">Galaxy Buds</h3>
+            </section>
+            <section class="sec2">
+                <img src="Images/Tws2.jpeg" alt="" class="miImg2">
+                <H3 class="twsText2">Apple Airpods</H3>
+            </section>
+            <section class="sec3">
+                <img src="Images/Tws3.jpeg" alt="" class="miImg3">
+                <h3 class="twsText3">One Plus Buds</h3>
+            </section>
+            <section class="sec4">
+                <img src="Images/Tws4.jpeg" alt="" class="miImg4">
+                <h3 class="twsText4">boAt Earbuds</h3>
+            </section>
+        </div>
+        <br><br>
+        <h2 class="moreItemsText2">More on Laptops</h2>
+        <p class="subText">By Roles</p>
+        <div class="moreItems2">
+            <section class="sec1">
+                <img src="Images/Lap1.jpeg" alt="" class="lImg1">
+                <h3 class="LapText1">All Rounder</h3>
+            </section>
+            <section class="sec2">
+                <img src="Images/Lap2.jpg" alt="" class="lImg2">
+                <H3 class="LapText2">Office</H3>
+            </section>
+            <section class="sec3">
+                <img src="Images/Lap3.jpeg" alt="" class="lImg3">
+                <h3 class="LapText3">Student</h3>
+            </section>
+            <section class="sec4">
+                <img src="Images/Lap4.jpeg" alt="" class="lImg4">
+                <h3 class="LapText4">Gaming</h3>
+            </section>
+        </div>
+        <br><br>
+        <h2 class="moreItemsText3" id="moreItemsText">More on TVs</h2>
+        <p class="subText">By Brands</p>
+        <div class="moreItems3" id="moreItems">
+            <section class="sec1">
+                <img src="Images/TV1.jpeg" alt="" class="TVImg1">
+                <h3 class="TVText1">SONY</h3>
+            </section>
+            <section class="sec2">
+                <img src="Images/TV2.jpeg" alt="" class="TVImg2">
+                <H3 class="TVText2">SAMSUNG</H3>
+            </section>
+            <section class="sec3">
+                <img src="Images/TV3.jpeg" alt="" class="TVImg3">
+                <h3 class="TVText3">LG</h3>
+            </section>
+            <section class="sec4">
+                <img src="Images/TV4.jpeg" alt="" class="TVImg4">
+                <h3 class="TVText4">MI</h3>
+            </section>
+        </div>
+        <br><br>
+
+        <!-- report box -->
+        <div class="form-box-container">
+			<div class="form-header">
+				<img src="Images/message.png" id="mail-icon">
+				<p id="label-of-report"><b>Report an Issue?</b></p>
+			</div>
+			<form action="">
+				<label for="fname" class="form-item">First Name</label>
+				<input type="text" id="fname" required>
+				<br><br>
+				<label for="lname" class="form-item">Last Name</label>
+				<input type="text" id="lname" required>
+				<br><br>
+				<textarea id="subject" placeholder="Your Queries..." required></textarea>
+				<br><br>
+				<input type="submit" id="submit" value="Submit">
+			</form>
+		</div>
+
+        <!-- back to top button -->
+        <button onclick="topFunction()" class="topBtn" id="myBtn" title="Go to top">Back to Top</button>
+    </main>
+    
+    <footer>
+        <!-- footer contents -->
+        <div class="footerItems">
+            <ul>
+                <li><h3 class="footerHead">ABOUT</h3></li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Seller Information</li>
+            </ul>
+        </div>
+        <div class="footerItems2">
+            <ul>
+                <li><h3 class="footerHead">HELP</h3></li>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Returns</li>
+            </ul>
+        </div>
+        <div class="footerItems3">
+            <ul>
+                <li><h3 class="footerHead">SOCIAL</h3></li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="footerItems4">
+            <ul>
+                <li><h3 class="footerHead">CONSUMER POLICY</h3></li>
+                <li>Terms of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <br>
+    </footer>
+</body>
+</html>
